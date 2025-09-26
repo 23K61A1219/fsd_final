@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Example</title>
+    <style>
+        body {
+            height: 2000px; /* to enable scrolling */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .background-container {
+            position: relative;
+            height: 30vh; /* full viewport height */
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+
+        /* Using a pseudo-element for the tilted background image */
+        .background-container::before {
+            content: "";
+            position: fixed; /* keeps it fixed when scrolling */
+            top: 50%; /* halfway down the page */
+            left: 50%;
+            width: 600px; /* image width */
+            height: 600px; /* image height */
+            background-image: url("https://wallpaperaccess.com/full/1105026.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: translate(-50%, -50%) rotate(15deg); /* tilt 15 degrees horizontally */
+            z-index: -1; /* behind content */
+        }
+
+        .content {
+            padding: 50px;
+            max-width: 1000px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <div class="content">
+            <h1>Background Image Example</h1>
+            <p>
+                This background image is placed halfway down the page and tilted. 
+                It stays in place when you scroll up or down.
+            </p>
+            <p>Scroll down to see the effect.</p>
+        </div>
+    </div>
+</body>
+</html>

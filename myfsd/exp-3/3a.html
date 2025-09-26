@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Semantic Tags Example</title>
+  <style>
+    header, footer {
+      background: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      background: #555;
+      color: white;
+      padding: 10px;
+    }
+    nav a {
+      color: yellow;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    main {
+      display: flex;
+      padding: 10px;
+    }
+    article {
+      flex: 3;
+      background: #f2f2f2;
+      padding: 15px;
+      margin-right: 10px;
+    }
+    aside {
+      flex: 1;
+      background: #e0e0e0;
+      padding: 15px;
+    }
+    figure {
+      text-align: center;
+    }
+    figcaption {
+      font-style: italic;
+    }
+    section {
+      margin-top: 15px;
+      padding: 10px;
+      background: #fff3cd;
+      border: 1px solid #ffc107;
+    }
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <article>
+      <h2>Article Section</h2>
+      <p>This is an <span class="highlight">article</span> about HTML5 semantic elements. They make code more meaningful and accessible.</p>
+      
+      <section>
+        <h3>Sub Section</h3>
+        <p>Sections are useful for dividing content into logical groups.</p>
+      </section>
+
+      <figure>
+        <img src="https://via.placeholder.com/250" alt="Sample Image">
+        <figcaption>Figure 1: Example image with caption</figcaption>
+      </figure>
+    </article>
+
+    <aside>
+      <h2>Related Info</h2>
+      <p>This is an <span class="highlight">aside</span> element, usually for side notes, ads, or links.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
