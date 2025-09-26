@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal and External JavaScript Example</title>
+    <script>
+        function showExternalMessage() {
+            alert("Hello! This is External JavaScript.");
+        }
+    </script>
+</head>
+<body>
+    <h2>Internal & External JavaScript with I/O and Type Conversion</h2>
+    <script>
+        function showInternalMessage() {
+            alert("Hello! This is Internal JavaScript.");
+            let name = prompt("Enter your name:");
+            console.log("User entered name: " + name);
+            alert("Welcome, " + name + "!");
+            let numStr = prompt("Enter a number (string):");  
+            let num = Number(numStr); 
+            alert("You entered number + 10 = " + (num + 10));
+
+            let n = 123;
+            let nStr = String(n); 
+            console.log("Converted number to string: " + nStr);
+        }
+    </script>
+    <button onclick="showInternalMessage()">Click Internal JS</button>
+    <button onclick="showExternalMessage()">Click External JS</button>
+</body>
+</html>
